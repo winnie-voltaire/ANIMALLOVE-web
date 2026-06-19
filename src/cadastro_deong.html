@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Animal Love - Cadastro de ONG</title>
+    <!-- Links de Fontes Corrigidos -->
+     <link rel="icon" type="image/png" href="img/logoaa.png">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-font {
+            font-family: 'Anton', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen paw-bg flex flex-col relative">
+
+    <!-- TELA DE SUCESSO DO CADASTRO (MODAL) -->
+    <!-- ID unificado como "cadastro-ong" para receber a ação do formulário -->
+    <div id="cadastro-ong" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 items-center justify-center p-4">
+        <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl relative">
+            <!-- BOTÃO X PARA FECHAR: Redireciona para adotar.html -->
+            <a href="adotar.html" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold no-underline">✕</a>
+            
+            <!-- BOLINHA VERDE COM O ÍCONE DE CHECK -->
+            <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-inner animate-bounce">
+                <!-- Link xmlns corrigido para renderizar a imagem do check corretamente -->
+                <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://w3.org">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <h3 class="title-font text-2xl text-fuchsia-800 uppercase tracking-wider mb-2">ONG Cadastrada!</h3>
+            <p class="text-gray-600 text-sm mb-4">Agradecemos a parceria. Agora vocês podem gerenciar seus animais no site.</p>
+            
+            <!-- BOTÃO OK: Redireciona o usuário para a página adotar.html -->
+            <a href="adotar.html" class="inline-block bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold py-2 px-6 rounded-lg transition-colors no-underline">
+                OK
+            </a>
+        </div>
+    </div>
+
+    <div class="w-full">
+        <div class="bg-[url(/img/fundo.jpg)]"></div>
+        
+  <!-- HEADER ALTERADO PARA BRANCO COM BORDA E SOMBRA -->
+        <header class="fixed top-0 left-0 bg-slate-100 border-b border-gray-100 
+        w-full z-50 shadow-sm">
+            <!-- Container interno para afastar o menu das bordas da tela -->
+            <div class="max-w-6xl mx-auto flex items-center justify-between px-6 
+            md:px-12 py-4">
+                <div class="container flex items-center mx-auto">
+                    <div>
+                        <a href="index.html">
+                            <img src="img/logo.png" class="w-20 md:w-[225px]" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Container Principal -->
+        <main class="flex-grow flex items-center justify-center min-h-screen px-4 pt-32 pb-10">
+            
+            <!-- Caixa Branca do Formulário de Cadastro da ONG -->
+            <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
+                <h2 class="title-font text-3xl text-fuchsia-600 text-center mb-6 uppercase tracking-wider">
+                    Cadastro<br>de ONG
+                </h2>
+
+                <!-- ACTION corrigida apontando exatamente para o ID do modal correspondente -->
+                <form action="#cadastro-ong" method="GET" class="space-y-4">
+                    
+                    <!-- 1. Nome da Organização -->
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-1">Nome da ONG:</label>
+                        <input type="text" placeholder="Ex: Instituto Patinhas Felizes" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none 
+                        focus:ring-2 focus:ring-fuchsia-400 focus:border-transparent" required>
+                    </div>
+
+                    <!-- 2. CNPJ ou Registro Institucional -->
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-1">CNPJ (opcional):</label>
+                        <input type="text" placeholder="00.000.000/0001-00" class="w-full px-4 py-2 border border-gray-300 rounded-lg 
+                        focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:border-transparent">
+                    </div>
+
+                    <!-- 3. E-mail Institucional -->
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-1">E-mail de Contato:</label>
+                        <input type="email" placeholder="contato@ong.org" class="w-full px-4 py-2 border border-gray-300 
+                        rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:border-transparent" required>
+                    </div>
+
+                    <!-- 4. Telefone / WhatsApp -->
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-1">Telefone / WhatsApp:</label>
+                        <input type="tel" placeholder="(11) 99999-9999" class="w-full px-4 py-2 border border-gray-300 rounded-lg 
+                        focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:border-transparent" required>
+                    </div>
+
+                    <!-- 5. Endereço da Sede -->
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-1">Endereço Completo:</label>
+                        <input type="text" placeholder="Rua, número, bairro e cidade" class="w-full px-4 py-2 border border-gray-300 
+                        rounded-lg focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:border-transparent" required>
+                    </div>
+
+                    <!-- 6. Foco Principal da ONG -->
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-1">Animais atendidos:</label>
+                        <select class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 bg-white focus:outline-none focus:ring-2
+                         focus:ring-fuchsia-400 focus:border-transparent cursor-pointer" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="caes">Apenas Cães</option>
+                            <option value="gatos">Apenas Gatos</option>
+                            <option value="ambos">Cães e Gatos</option>
+                            <option value="outros">Animais Silvestres / Outros</option>
+                        </select>
+                    </div>
+
+                    <!-- 7. Capacidade de Abrigo provisória -->
+                    <div>
+                        <p class="text-gray-700 text-sm font-medium mb-1">Possui espaço físico para abrigo próprio?</p>
+                        <div class="flex items-center space-x-4 mt-1">
+                            <label class="flex items-center text-gray-600 cursor-pointer">
+                                <input type="radio" name="abrigo" value="sim" class="mr-2" required> Sim
+                            </label>
+                            <label class="flex items-center text-gray-600 cursor-pointer">
+                                <input type="radio" name="abrigo" value="nao" class="mr-2"> Não
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 8. Redes Sociais ou Website -->
+                    <div>
+                        <label class="block text-gray-700 text-sm font-medium mb-1">Link do Instagram ou Site:</label>
+                        <input type="url" placeholder="https://instagram.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none 
+                        focus:ring-2 focus:ring-fuchsia-400 focus:border-transparent" required>
+                    </div>
+
+                    <!-- Botão de Enviar -->
+                    <button type="submit" class="w-full bg-fuchsia-800 hover:bg-fuchsia-600 text-white font-bold py-2.5 px-4 rounded-lg transition-colors mt-4 
+                    block text-center cursor-pointer">
+                        Concluir Cadastro
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Animal Love</title>
+    <!-- Fonte -->
+     <link rel="icon" type="image/png" href="img/logoaa.png">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-font{
+            font-family: 'Anton', sans-serif;
+        }
+         /* SOLUÇÃO DEFINITIVA PARA MATAR O ZOOM DA IMAGEM */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('img/fundo.jpg');
+            background-repeat: repeat;
+            background-size: auto; /* Trava no tamanho real da foto, sem esticar */
+        }
+    </style>
+</head>
+<body class="min-h-screen paw-bg flex flex-col justify-between items-center pt-6 relative">
+    
+    <div class="bg-[url(/img/fundo.jpg)]"></div>
+
+    <!-- Container Principal do Conteúdo -->
+    <div class="w-full max-w-6xl my-auto px-6 pb-6">
+        <!-- Logo -->
+        <div class="flex justify-center mb-10">
+            <img src="./img/logo.png" alt="Logo" class="w-[1000px]">
+        </div>
+
+        <!-- Conteúdo: Grid de Informações e Botões -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-6">
+            
+<!-- Caixa de Texto com o Resumo do Site (Alargada para a esquerda com max-w-2xl) -->
+<div class="bg-white rounded-3xl p-8 shadow-lg w-full max-w-2xl flex flex-col justify-between h-auto">
+  <div>
+    <h2 class="title-font text-3xl text-blue-400 uppercase tracking-wider mb-4">Nossa Missão</h2>
+    <p class="text-lg leading-relaxed text-gray-800 text-justify font-medium">
+      A <strong>Animal Love</strong> é uma plataforma que une ONGs e protetores independentes para transformar a realidade de animais vulneráveis.
+       Aqui você pode adotar com responsabilidade, apoiar financeiramente o tratamento de bichinhos doentes, voluntariar-se para resgates de campo
+        e reportar casos de maus-tratos de forma geolocalizada, promovendo a saúde pública e o bem-estar animal em nossas comunidades.
+        <br> Nosso projeto
+         está alinhado à Agenda 2030 da ONU através das 
+         <span class="text-teal-700 font-bold">
+        ODS 3, 11 e 15
+        </span>.
+    </p>
+  </div>
+
+  <!-- Contatos Inferiores mantidos perfeitamente no lugar -->
+  <div class="flex flex-wrap justify-between gap-4 mt-6 text-xl font-bold text-gray-600 border-t pt-4">
+    <span class="flex items-center gap-2 whitespace-nowrap">✉️ animallove@.com.br</span>
+    <span class="flex items-center gap-2 whitespace-nowrap">📞 (93) 97400-6418</span>
+  </div>
+</div>
+
+
+
+            <!-- Botões Principais de Ação -->
+            <div class="flex flex-col items-center gap-8 justify-center">
+                <a href="adotar.html" class="no-underline w-full max-w-sm">
+                    <button class="bg-red-900 hover:bg-red-800 text-white title-font text-4xl py-5 rounded-full w-full shadow-md transition-all duration-300
+                     hover:scale-110 tracking-wide cursor-pointer">
+                        Adotar
+                    </button>
+                </a>
+                <a href="ajuda.html" class="no-underline w-full max-w-sm">
+                    <button class="bg-blue-900 hover:bg-blue-800 text-white title-font text-4xl py-5 rounded-full w-full shadow-md transition-all duration-300 
+                    hover:scale-110 tracking-wide cursor-pointer">
+                        Ajudar
+                    </button>
+                </a>
+                <a href="alerta_voluntario.html" class="no-underline w-full max-w-sm">
+                    <button class="bg-blue-900 hover:bg-blue-800 text-white title-font text-4xl py-5 rounded-full w-full shadow-md transition-all duration-300 
+                    hover:scale-110 tracking-wide cursor-pointer">
+                        Voluntariar-se
+                    </button>
+                </a>
+                <a href="alerta_denuncia.html" class="no-underline w-full max-w-sm">
+                    <button class="bg-gray-300 hover:bg-gray-400 text-black title-font text-4xl py-5 rounded-full w-full shadow-md transition-all duration-300 
+                    hover:scale-110 tracking-wide cursor-pointer">
+                        Denunciar
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+<!-- RODAPÉ BRANCO COMPLETAMENTE AJUSTADO EM TRÊS PARTES -->
+<footer class="w-full bg-white border-t border-gray-200 shadow-xl py-2 px-4 md:px-12 flex justify-between items-center mt-auto z-50">
+  
+  <!-- LADO ESQUERDO: Seleção de Localização com imagem local.png -->
+  <div class="flex items-center gap-2 group">
+    <!-- Imagem da localização que escurece com o filtro de brilho ao passar o mouse -->
+    <img src="img/local.png" class="w-6 h-6 object-contain transition-all duration-300 group-hover:brightness-70" alt="Ícone Localização">
+    
+<!-- Caixa de seleção exibindo apenas as siglas dos estados -->
+    <select class="bg-transparent text-gray-800 text-base font-semibold border-none outline-none cursor-pointer hover:text-blue-600 transition-colors bg-white">
+      <option value="" disabled selected>Estado</option>
+      <option value="AC">AC</option>
+      <option value="AL">AL</option>
+      <option value="AP">AP</option>
+      <option value="AM">AM</option>
+      <option value="BA">BA</option>
+      <option value="CE">CE</option>
+      <option value="DF">DF</option>
+      <option value="ES">ES</option>
+      <option value="GO">GO</option>
+      <option value="MA">MA</option>
+      <option value="MT">MT</option>
+      <option value="MS">MS</option>
+      <option value="MG">MG</option>
+      <option value="PA">PA</option>
+      <option value="PB">PB</option>
+      <option value="PR">PR</option>
+      <option value="PE">PE</option>
+      <option value="PI">PI</option>
+      <option value="RJ">RJ</option>
+      <option value="RN">RN</option>
+      <option value="RS">RS</option>
+      <option value="RO">RO</option>
+      <option value="RR">RR</option>
+      <option value="SC">SC</option>
+      <option value="SP">SP</option>
+      <option value="SE">SE</option>
+      <option value="TO">TO</option>
+    </select>
+  </div>
+
+  <!-- MEIO: Botão ODS&site com a sua foto ods.png -->
+  <a href="https://gtagenda2030.org.br/ods/" target="_blank" class="flex items-center gap-3 hover:bg-gray-100 text-gray-700 px-3 py-1.5 rounded-xl font-bold text-sm transition-all duration-300 no-underline tracking-wider group">
+    <img src="img/ods.png" class="w-6 h-6 object-contain" alt="Logo ODS">
+    <span class="text-gray-800 text-base font-semibold group-hover:text-blue-600 transition-colors">ODS&site</span>
+  </a>
+
+  <!-- LADO DIREITO: Grupo de Login com a sua foto usuario.png -->
+  <a href="login.html" class="flex items-center gap-2.5 no-underline text-gray-700 hover:text-yellow-600 px-3 py-1.5 rounded-xl hover:bg-gray-100 transition-all duration-300 group">
+    <div class="w-6 h-6 rounded-full border border-gray-300 flex items-center justify-center shadow-inner overflow-hidden group-hover:border-yellow-500 transition-colors bg-gray-50">
+      <img src="img/usuario.png" class="w-full h-full object-contain" alt="Foto Usuário">
+    </div>
+    <span class="font-bold text-lg uppercase tracking-wider">Login</span>
+  </a>
+
+</footer>
+
+
+
+</body>
+</html>

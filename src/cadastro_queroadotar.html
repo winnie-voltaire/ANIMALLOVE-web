@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Love - Formulário de Adoção</title>
+  <!-- Fonte -->
+  <link rel="icon" type="image/png" href="img/logoaa.png">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .title-font {
+      font-family: 'Anton', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen paw-bg flex flex-col relative">
+
+  <!-- TELA DE SUCESSO DE ADOÇÃO (MODAL) -->
+  <div id="adocao-enviada" class="meu-modal fixed inset-0 bg-black/60 backdrop-blur-sm z-50 items-center justify-center p-4">
+    <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl relative">
+      <!-- BOTÃO X PARA FECHAR -->
+      <a href="#" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold no-underline">✕</a>
+      
+      <!-- BOLINHA VERDE COM O ÍCONE DE CHECK -->
+      <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-inner animate-bounce">
+        <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://w3.org">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <h3 class="title-font text-2xl text-teal-700 uppercase tracking-wider mb-2"> Enviado!</h3>
+      <p class="text-gray-600 text-sm mb-4">Obrigado pelo interesse! Nossa equipe entrará em contato em breve via e-mail ou telefone para avaliar sua proposta e marcar a entrevista.</p>
+      
+      <!-- BOTÃO OK: Retorna para a página principal dos animais -->
+      <a href="adotar.html" class="inline-block bg-teal-600 hover:bg-teal-500 text-white font-bold py-2 px-6 rounded-lg transition-colors no-underline">
+        OK
+      </a>
+    </div>
+  </div>
+
+  <div class="w-full">
+    <div class="bg-[url(/img/fundo.jpg)]"></div>
+    
+    <!-- HEADER BRANCO COM BORDA E SOMBRA -->
+    <header class="fixed top-0 left-0 bg-slate-100 border-b border-gray-100 w-full z-50 shadow-sm">
+      <div class="max-w-6xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
+        <div class="container flex items-center mx-auto">
+          <div>
+            <a href="index.html">
+              <img src="img/logo.png" class="w-20 md:w-[225px]" alt="Logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Container Principal -->
+    <main class="flex-grow flex items-center justify-center min-h-screen px-4 pt-32 pb-10">
+      <!-- Caixa Branca do Formulário de Adoção (Um pouco mais larga que o login para caber melhor os dados) -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-lg">
+        <h2 class="title-font text-3xl text-teal-600 text-center mb-6 uppercase tracking-wider">
+          Formulário de<br>Adoção
+        </h2>
+        
+        <form action="#adocao-enviada" method="GET" class="space-y-4">
+          
+          <!-- Nome Completo -->
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">Nome Completo:</label>
+            <input type="text" placeholder="Seu nome aqui" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none
+             focus:ring-2 focus:ring-teal-400 focus:border-transparent" required>
+          </div>
+
+          <!-- CPF e Telefone colocados lado a lado no computador -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-gray-700 text-sm font-medium mb-1">CPF:</label>
+              <input type="text" placeholder="000.000.000-00" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 
+              focus:ring-teal-400 focus:border-transparent" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 text-sm font-medium mb-1">WhatsApp / Telefone:</label>
+              <input type="tel" placeholder="(00) 00000-0000" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+               focus:ring-teal-400 focus:border-transparent" required>
+            </div>
+          </div>
+
+          <!-- Campo de Email -->
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">E-mail para Contato:</label>
+            <input type="email" placeholder="seu@email.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 
+            focus:ring-teal-400 focus:border-transparent" required>
+          </div>
+
+          <!-- Endereço Residencial -->
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">Endereço (Rua, Número, Bairro):</label>
+            <input type="text" placeholder="Ex: Rua das Flores, 123 - Centro" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none 
+            focus:ring-2 focus:ring-teal-400 focus:border-transparent" required>
+          </div>
+
+          <!-- Pergunta sobre a Residência (Select Box) -->
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">Tipo de Residência:</label>
+            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 
+            focus:border-transparent bg-white cursor-pointer" required>
+              <option value="" disabled selected>Selecione uma opção...</option>
+              <option value="casa-quintal-fechado">Casa com quintal totalmente fechado</option>
+              <option value="casa-sem-quintal">Casa sem quintal / sem portão</option>
+              <option value="apartamento-com-rede">Apartamento com redes de proteção</option>
+              <option value="apartamento-sem-rede">Apartamento sem redes de proteção</option>
+            </select>
+          </div>
+
+          <!-- Campo Novo: Nome do Animal Desejado -->
+<div>
+  <label class="block text-gray-700 text-sm font-medium mb-1">Nome do animal que deseja adotar:</label>
+  <input type="text" placeholder="Ex: Thor, Mel, Polly..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400
+   focus:border-transparent" required>
+</div>
+
+<!-- Campo Novo: Já possui outros animais -->
+<div>
+  <label class="block text-gray-700 text-sm font-medium mb-1">Você já possui outros animais em casa? Se sim, quais?</label>
+  <textarea placeholder="Ex: Não possuo / Sim, tenho dois gatos" rows="2" class="w-full px-4 py-2 border border-gray-300 
+  rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent resize-none" required></textarea>
+</div>
+
+
+          <!-- Termo de Consentimento -->
+          <div class="flex items-start mt-2">
+            <input type="checkbox" id="termo" name="termo" class="h-4 w-4 text-teal-600 border-gray-300 rounded focus:ring-teal-400 cursor-pointer mt-1" required>
+            <label for="termo" class="ml-2 text-sm text-gray-600 cursor-pointer select-none">
+              Estou ciente de que a adoção exige responsabilidade financeira, espaço adequado e amor, e aceito passar pela entrevista.
+            </label>
+          </div>
+
+          <!-- Botões de Ação Inferiores -->
+        <div class="flex flex-col sm:flex-row gap-4 pt-4 border-t-2 border-gray-100">
+          <!-- Botão Cancelar -->
+          <a href="alerta_queroadotar.html" class="w-full sm:w-1/3 px-6 py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-sm rounded-xl text-center 
+          transition-colors no-underline uppercase tracking-wider"> Cancelar </a>
+          <!-- Botão Enviar Cadastro -->
+          <button type="submit" class="w-full sm:w-2/3 bg-teal-700 hover:bg-teal-600 text-white font-extrabold
+           text-base py-4 px-6 rounded-xl text-center transition-all shadow-md hover:shadow-lg uppercase tracking-wider cursor-pointer"> Enviar </button>
+        </div>
+
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

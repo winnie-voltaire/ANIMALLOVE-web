@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Love</title>
+  <!-- Fonte -->
+  <link rel="icon" type="image/png" href="img/logoaa.png">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+  <style>
+    body{
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .title-font{
+      font-family: 'Anton', sans-serif;
+    }
+
+     /* SOLUÇÃO DEFINITIVA PARA MATAR O ZOOM DA IMAGEM */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('img/fundo.jpg');
+            background-repeat: repeat;
+            background-size: auto; /* Trava no tamanho real da foto, sem esticar */
+        }
+  </style>
+</head>
+
+<body class="min-h-screen paw-bg flex">
+  <div class="w-full">
+    <div class="bg-[url(/img/fundo.jpg)]"></div>
+ <!-- Logo -->
+  <!-- HEADER ALTERADO PARA BRANCO COM BORDA E SOMBRA -->
+        <header class="fixed top-0 left-0 bg-slate-100 border-b border-gray-100 
+        w-full z-50 shadow-sm">
+            <!-- Container interno para afastar o menu das bordas da tela -->
+            <div class="max-w-6xl mx-auto flex items-center justify-between px-6 
+            md:px-12 py-4">
+        
+        <!-- Lado Esquerdo: Logo -->
+        <div class="flex items-center">
+          <a href="#">
+            <img src="img/logo.png" class="w-20 md:w-[225px]" alt="Logo">
+          </a>
+        </div>
+        
+        <!-- Lado Direito: Menu com Fonte Menor -->
+        <nav class="flex items-center">
+          <ul class="flex font-bold whitespace-nowrap m-0 p-0 list-none">
+            <li>
+              <a href="alerta_cadasdinh.html" class="text-black hover:text-rose-600 transition-colors duration-300 no-underline">
+                        Cadastro Financeiro do Pet
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+<!-- CONTAINER DO GRID (Mantém as 3 colunas organizadas) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-y-16 gap-x-12 max-w-7xl mx-auto mt-40 px-6 w-full justify-items-center">
+  
+  <!-- === COLUNA 1: Thor, Mel e Sansa === -->
+  <div class="flex flex-col gap-16 w-full max-w-sm">
+    
+    <!-- CARD: Thor -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/cachorro2.jpg" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+      <h2 class="text-2xl font-bold text-gray-900">🐶​Thor🐶​</h2>
+<p class="text-base mt-2 text-gray-700">Thor foi resgatado e procura uma família cheia de amor. Para continuar saudável no abrigo, ele precisa muito de ajuda com:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Produtos de cuidados para banho<br>• Alimentação de qualidade</p>
+
+
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all duration-400 hover:bg-blue-400
+       hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+
+    <!-- CARD: Mel -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/cachorro5.png" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+       <h2 class="text-2xl font-bold text-gray-900">🐶​Mel🐶​</h2>
+<p class="text-base mt-2 text-gray-700">Mel está muito debilitada, deitada, bem magrinha e usando um colar elizabetano (cone) no pescoço. Ela foi diagnosticada
+   com a doença do carrapato (Erliquiose) e precisa de doações urgentes para:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Custo integral do tratamento médico<br>• Medicamentos e exames de sangue</p>
+
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all duration-300
+       hover:bg-blue-400 hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+
+    <!-- CARD NOVO: Sansa -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/coelho1.png" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+       <h2 class="text-2xl font-bold text-gray-900">​🐰​Sansa​🐰​</h2>
+<p class="text-base mt-2 text-gray-700">A coelhinha Sansa foi encontrada em uma situação delicada e atualmente está com um de seus olhinhos bem ferido. 
+  Sua doação será destinada para:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Pomadas oftalmológicas específicas<br>• Cirurgia e curativos diários</p>
+
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all duration-300 
+      hover:bg-blue-400 hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+  </div>
+
+  <!-- === COLUNA 2: Boby, Pipoca e Pikachu === -->
+  <div class="flex flex-col gap-16 w-full max-w-sm">
+    
+    <!-- CARD: Boby -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/cachorro4.jpg" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+       <h2 class="text-2xl font-bold text-gray-900">🐶​Boby🐶​</h2>
+<p class="text-base mt-2 text-gray-700">Boby foi resgatado das ruas e está sob os nossos cuidados protetores. Para se manter
+   forte enquanto espera um lar, ele depende de doações para:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Compra de sacos de ração<br>• Suplementação alimentar</p>
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all 
+      duration-300 hover:bg-blue-400 hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+
+    <!-- CARD: Pipoca -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/gato4.png" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+        <h2 class="text-2xl font-bold text-gray-900">😺​Pipoca😺​</h2>
+<p class="text-base mt-2 text-gray-700">A gatinha Pipoca chegou com algumas feridinhas visíveis no seu rostinho. Ela já começou 
+  a receber os cuidados básicos e parece estar melhorando, mas ainda precisa de:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Pomadas cicatrizantes e antialérgicas<br>• Ração especial de alta energia</p>
+
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all duration-300 
+      hover:bg-blue-400 hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+
+    <!-- CARD NOVO: Pikachu -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/calopsita1.png" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+       <h2 class="text-2xl font-bold text-gray-900">🐦Pikachu🐦</h2>
+<p class="text-base mt-2 text-gray-700 leading-relaxed">O pequeno Pikachu foi resgatado em estado crítico, muito molhado e bastante debilitado.
+   Ele está lutando pela vida e precisa de apoio urgente para:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Internação em UTI aviária especializada<br>• Medicamentos injetáveis urgentes</p>
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all duration-300
+       hover:bg-blue-400 hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+  </div>
+
+  <!-- === COLUNA 3: Yang, Frederica e Princeso === -->
+  <div class="flex flex-col gap-16 w-full max-w-sm">
+    
+    <!-- CARD: Yang -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/gato3.jpg.jpeg" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+       <h2 class="text-2xl font-bold text-gray-900">😺​Yang😺​</h2>
+<p class="text-base mt-2 text-gray-700">Yang foi resgatada das ruas recentemente e necessita passar 
+  por todo o protocolo de triagem inicial. Colabore para garantir a ela:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Aplicação de vacinas essenciais V4/V5<br>• Exames gerais de saúde e check-up</p>
+
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all 
+      duration-300 hover:bg-blue-400 hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+
+    <!-- CARD: Frederica -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/cachorro6.png" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+       <h2 class="text-2xl font-bold text-gray-900">🐶​Frederica🐶​</h2>
+<p class="text-base mt-2 text-gray-700">Frederica acabou de ser resgatada diretamente do abandono nas ruas. Ela se encontra 
+  muito magra e fraca, precisando urgentemente de doações para:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Alimentação focada em ganho de peso<br>• Vitaminas e exames para anemia</p>
+
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all
+       duration-300 hover:bg-blue-400 hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+
+    <!-- CARD NOVO: Princeso -->
+    <div class="bg-white/70 rounded-2xl p-6 text-center shadow-md flex flex-col justify-between h-auto pb-8">
+      <img src="img/gato5.png" class="w-full h-96 object-cover rounded-xl shadow-sm">
+      <div class="flex-1 flex flex-col justify-center py-4">
+       <h2 class="text-2xl font-bold text-gray-900">😺​Princeso😺​</h2>
+<p class="text-base mt-2 text-gray-700">O Princeso está totalmente saudável e bem alimentado. Ele só precisa de uma última etapa 
+  para finalmente encontrar o seu lar definitivo:</p>
+<p class="text-lg font-bold text-rose-600 mt-2">• Procedimento cirúrgico de castração<br>• Liberação oficial para a adoção</p>
+
+      </div>
+      <a href="alerta2_doar.html" class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold text-lg shadow-md transition-all duration-300
+       hover:bg-blue-400 hover:scale-110 hover:shadow-2xl no-underline inline-block">
+        Doar
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+

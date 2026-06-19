@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Love - Aviso Importante</title>
+  <!-- Fonte -->
+  <link rel="icon" type="image/png" href="img/logoaa.png">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+  <style>
+    body{ font-family: 'Poppins', sans-serif; 
+    }
+    .title-font{ font-family: 'Anton', sans-serif; 
+    }
+  /* SOLUÇÃO DEFINITIVA PARA MATAR O ZOOM DA IMAGEM */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('img/fundo.jpg');
+            background-repeat: repeat;
+            background-size: auto; /* Trava no tamanho real da foto, sem esticar */
+        }
+  </style>
+</head>
+<body class="min-h-screen paw-bg flex items-center justify-center p-6">
+  <div class="w-full max-w-6xl">
+    <div class="bg-[url(/img/fundo.jpg)]"></div>
+    
+    <!-- Logo Centralizada Gigante -->
+    <div class="flex justify-center mb-10">
+      <img src="./img/logo.png" alt="Logo" class="w-[1000px]">
+    </div>
+
+    <!-- Conteúdo: Caixa Branca de Alerta Centralizada -->
+    <div class="flex justify-center">
+      <div class="bg-white rounded-3xl p-10 shadow-xl w-full max-w-3xl border border-gray-100">
+        
+        <!-- Ícone e Título de Atenção (Ampliados) -->
+        <div class="flex items-center justify-center gap-4 mb-8">
+          <span class="text-4xl">⚠️</span>
+          <h2 class="title-font text-4xl text-red-600 uppercase tracking-wider text-center">
+            Aviso Importante
+          </h2>
+        </div>
+
+        <!-- Texto Explicativo Ampliado para Acessibilidade -->
+        <div class="text-gray-800 text-lg md:text-xl space-y-6 text-justify leading-loose mb-10 font-medium">
+          <p>
+            Esta seção é destinada <strong>exclusivamente</strong> para relatar casos reais de abuso, abandono ou violência contra animais. 
+          </p>
+          
+          <p>
+            Conforme a <strong>Lei nº 9.605/1998 (Lei de Crimes Ambientais)</strong>, em seu artigo 32, praticar ato de abuso, maus-tratos, 
+            ferir ou mutilar animais silvestres, domésticos ou domesticados é crime, com penas que podem chegar a 5 anos de reclusão quando se tratar de cães ou gatos.
+          </p>
+          
+          <!-- Caixa de Destaque Extra Grande -->
+          <div class="border-l-8 border-red-500 pl-5 bg-red-50 py-4 rounded-r-xl font-bold text-red-700 text-xl md:text-2xl leading-relaxed">
+            Atenção: Fazer falsas denúncias ou acusações infundadas movidas por má-fé constitui crime de denunciação caluniosa, passível de punição severa 
+            segundo o Artigo 339 do Código Penal Brasileiro.
+          </div>
+          
+          <p>
+            Por favor, certifique-se de possuir informações consistentes ou imagens que ajudem na identificação do caso antes de prosseguir.
+          </p>
+        </div>
+
+        <!-- Botões de Navegação Maiores e Mais Visíveis -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-end items-center border-t-2 border-gray-100 pt-6">
+          <!-- Botão Voltar -->
+          <a href="index.html" class="w-full sm:w-auto px-8 py-3.5 bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-sm rounded-xl 
+          text-center transition-colors no-underline uppercase tracking-wider">
+            Voltar
+          </a>
+          
+          <!-- Botão Continuar -->
+          <a href="denuncia.html" class="w-full sm:w-auto px-10 py-3.5 bg-red-500 hover:bg-red-600 text-white font-extrabold text-sm 
+          rounded-xl text-center transition-all shadow-md hover:shadow-lg no-underline uppercase tracking-wider">
+            Li e desejo continuar
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

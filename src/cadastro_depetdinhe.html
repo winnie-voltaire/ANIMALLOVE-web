@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Love - Cadastro de Doação Financeira</title>
+  <!-- Fonte -->
+  <link rel="icon" type="image/png" href="img/logoaa.png">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+  <style>
+    body{ font-family: 'Poppins', sans-serif; 
+    }
+    .title-font{ font-family: 'Anton', sans-serif; 
+    }
+   
+  </style>
+</head>
+<body class="min-h-screen paw-bg flex flex-col relative bg-gray-50">
+
+  <!-- TELA DE SUCESSO (MODAL FLUTUANTE) -->
+  <div id="cadastro-realizado" class="meu-modal fixed inset-0 bg-black/60 backdrop-blur-sm z-50 items-center justify-center p-4">
+    <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl relative">
+      <!-- Botão X: Limpa e volta para a página inicial do site -->
+      <a href="ajuda.html" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold no-underline">✕</a>
+      
+     <!-- BOLINHA VERDE COM O ÍCONE DE CHECK -->
+            <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-inner animate-bounce">
+                <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://w3.org">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+      <h3 class="title-font text-2xl text-amber-700 uppercase tracking-wider mb-2"> Publicado!</h3>
+      <p class="text-gray-500 text-sm mb-4">O cadastro de arrecadação do animal foi postado com sucesso.</p>
+      
+      <!-- Botão OK: Redireciona para a página principal -->
+      <a href="ajuda.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-6 rounded-lg text-sm transition-colors no-underline"> OK </a>
+    </div>
+  </div>
+
+  <div class="w-full">
+    <div class="bg-[url(/img/fundo.jpg)]"></div>
+  <!-- HEADER ALTERADO PARA BRANCO COM BORDA E SOMBRA -->
+        <header class="fixed top-0 left-0 bg-slate-100 border-b border-gray-100 
+        w-full z-50 shadow-sm">
+            <!-- Container interno para afastar o menu das bordas da tela -->
+            <div class="max-w-6xl mx-auto flex items-center justify-between px-6 
+            md:px-12 py-4">
+        <div>
+          <a href="index.html">
+            <img src="img/logo.png" class="w-20 md:w-[225px]" alt="Logo">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Container Principal Centrado -->
+    <main class="flex-grow flex items-center justify-center min-h-screen px-4 pt-36 pb-10">
+      <!-- Caixa BRANCA com Letras Grandes (Acessibilidade para Miopia) -->
+      <div class="bg-white p-10 rounded-3xl shadow-xl w-full max-w-2xl border border-gray-100">
+        <h2 class="title-font text-4xl text-amber-600 text-center mb-2 uppercase tracking-wider"> Cadrastro Financeiro </h2>
+        <p class="text-center text-gray-500 text-base mb-8">Cadastre um pet que precisa de ajuda com custos e doações</p>
+        
+        <!-- Formulário preparado para mídias (enctype) -->
+        <form action="#cadastro-realizado" method="GET" enctype="multipart/form-data" class="space-y-6">
+          
+          <!-- Campo: Nome do Animal -->
+          <div>
+            <label class="block text-gray-800 text-lg font-bold mb-2 uppercase tracking-wide">Nome do Animal:</label>
+            <input type="text" placeholder="Ex: Mel, Bob, Pipoca..." class="w-full px-5 py-3.5 border-2 border-gray-300 rounded-xl 
+            text-lg font-medium text-gray-800 focus:outline-none focus:ring-4 focus:ring-blue-400/30 focus:border-amber-400" required>
+          </div>
+
+          <!-- NOVO CAMPO: FOTO DO ANIMAL (Apenas uma imagem) -->
+          <div>
+            <label class="block text-gray-800 text-lg font-bold mb-2 uppercase tracking-wide">Foto do Animal:</label>
+            <label class="relative flex flex-col items-center justify-center w-full h-44 border-2 border-dashed border-amber-300
+             rounded-xl bg-amber-50/50 hover:bg-amber-50 cursor-pointer overflow-hidden group">
+              <!-- Campo de upload sem a opção 'multiple' para travar em apenas 1 arquivo -->
+              <input type="file" name="fotoAnimal" accept="image/*" required class="absolute inset-0 opacity-0 cursor-pointer z-20"
+               onchange="this.nextElementSibling.src=window.URL.createObjectURL(this.files[0]); this.nextElementSibling.classList.remove('hidden');">
+              <!-- Visualização da imagem selecionada -->
+              <img class="absolute inset-0 w-full h-full object-cover hidden z-10" alt="Previa do pet">
+              <!-- Elementos visuais do botão de anexo -->
+              <div class="text-center p-4 z-0">
+                <span class="text-3xl text-amber-600 font-bold block mb-1">📎</span>
+                <span class="text-base font-semibold text-amber-700 block">Clique para selecionar a foto</span>
+                <span class="text-xs text-gray-400 block mt-0.5">(Apenas formatos de imagem são aceitos)</span>
+              </div>
+            </label>
+          </div>
+
+          <!-- Campo: Informações sobre o caso do animal -->
+          <div>
+            <label class="block text-gray-800 text-lg font-bold mb-2 uppercase tracking-wide">Informações sobre o Pet e a sua situação:</label>
+            <textarea rows="5" placeholder="Explique aqui o motivo da arrecadação. Ex: Passou por cirurgia recente, precisa de remédios controlados, custos com ração especial..." 
+            class="w-full px-5 py-3.5 border-2 border-gray-300 rounded-xl text-lg font-medium text-gray-800 focus:outline-none focus:ring-4 
+            focus:ring-amber-400/30 focus:border-amber-400 resize-none" required></textarea>
+          </div>
+
+          <!-- Botões de Ação Inferiores -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-4 border-t-2 border-gray-100">
+            <!-- Botão Cancelar (Volta para a ajuda) -->
+            <a href="alerta_cadasdinh.html" class="w-full sm:w-1/3 px-6 py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold text-sm rounded-xl text-center 
+            transition-colors no-underline 
+            uppercase tracking-wider"> Cancelar </a>
+            <!-- Botão Enviar Cadastro -->
+            <button type="submit" class="w-full sm:w-2/3 bg-amber-700 hover:bg-amber-600 text-white font-extrabold text-base py-4 px-6 rounded-xl text-center transition-all shadow-md 
+            hover:shadow-lg uppercase tracking-wider cursor-pointer"> Cadastrar para Doação </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import "tailwindcss";
+/*
+.
+.
+Regra geral para o Tailwind v4:
+
+@theme → cores, espaçamentos, fontes, bordas (valores simples)
+@utility → background-image, background-size, background-position (propriedades compostas)
+.
+.
+*/
+
+/* Defina as suas cores personalizadas usando variáveis CSS dentro do tema */
+
+
+body {
+  background-image: url(../img/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+ /* Configuração padrão do Modal com Fade-In */
+.meu-modal {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+/* Quando a URL contiver #cadastro-realizado, o modal aparece com transição suave */
+#inscricao-realizada:target {
+      display: flex !important;
+      opacity: 1;
+    }
+
+/* Controle do Modal */
+.meu-modal {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+#denuncia-realizada:target {
+      display: flex !important;
+      opacity: 1;
+    }
+
+ /* Controle do Modal com Fade-In */
+.meu-modal { 
+      display: none; 
+      opacity: 0; 
+      transition: opacity 0.3s ease-in-out; 
+    }
+#cadastro-sucesso:target { 
+      display: flex !important; 
+      opacity: 1; 
+    }
+
+ /* Controle do Modal com Fade-In cadastro */
+.meu-modal { 
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out; 
+            }
+#cadastro-realizado:target { 
+      display: flex !important;
+      opacity: 1; }
+
+/* Controle do Modal */
+.meu-modal {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+#login-realizado:target {
+      display: flex !important;
+      opacity: 1;
+    }
+
+/* CORREÇÃO DO CONFLITO: Remove o display oculto na hora que o formulário é enviado */
+#cadastro-ong:target {
+    display: flex !important;
+        }
+
+/* Controle do Modal com Fade-In cadastro adoção */
+.meu-modal { 
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out; 
+            }
+#adocao-enviada:target { 
+      display: flex !important;
+      opacity: 1; 
+    }
+
+@utility bg-size-175pct { /*desktop*/
+  background-size: 175%;
+}
+
+@utility bg-fundo-theme { /*desktop*/
+  background-image: url('../img/fundo.jpg');
+}
+
+
+@utility bg-position-banner {
+  background-position: 46% 4%;
+}
+

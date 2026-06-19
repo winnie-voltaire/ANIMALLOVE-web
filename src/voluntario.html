@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Love- voluntario</title>
+  <!-- Fonte -->
+  <link rel="icon" type="image/png" href="img/logoaa.png">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+  <style>
+    body{ font-family: 'Poppins', sans-serif; 
+    }
+    .title-font{ font-family: 'Anton', sans-serif;
+     }  
+
+      /* SOLUÇÃO DEFINITIVA PARA MATAR O ZOOM DA IMAGEM */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('img/fundo.jpg');
+            background-repeat: repeat;
+            background-size: auto; /* Trava no tamanho real da foto, sem esticar */
+        }
+  </style>
+</head>
+<body class="min-h-screen paw-bg flex flex-col relative">
+
+    <!-- TELA DE SUCESSO (MODAL) -->
+  <div id="inscricao-realizada" class="meu-modal fixed inset-0 bg-black/60 backdrop-blur-sm z-50 items-center justify-center p-4">
+    <div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl relative">
+      
+      <!-- BOTÃO X PARA FECHAR: Redireciona para a página principal -->
+      <a href="index.html" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl font-bold no-underline">✕</a>
+
+       <!-- BOLINHA VERDE COM O ÍCONE DE CHECK -->
+            <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-inner animate-bounce">
+                <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://w3.org">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+      
+      <h3 class="title-font text-2xl text-yellow-600 uppercase tracking-wider mb-2">Inscrição Realizada!</h3>
+      <p class="text-gray-600 text-sm mb-4">Seus dados foram salvos com sucesso. Entraremos em contato com você via um grupo
+         de whatsapp para ajudar animais perto de você</p>
+      
+      <!-- BOTÃO OK: Redireciona para a página principal do site -->
+      <a href="index.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-lg transition-colors no-underline">
+        OK
+      </a>
+    </div>
+  </div>
+
+
+  <div class="w-full">
+    <div class="bg-[url(/img/fundo.jpg)]"></div>
+    
+  <!-- HEADER ALTERADO PARA BRANCO COM BORDA E SOMBRA -->
+        <header class="fixed top-0 left-0 bg-slate-100 border-b border-gray-100 
+        w-full z-50 shadow-sm">
+            <!-- Container interno para afastar o menu das bordas da tela -->
+            <div class="max-w-6xl mx-auto flex items-center justify-between px-6 
+            md:px-12 py-4">
+        <div class="container flex items-center mx-auto">
+          <div>
+            <a href="#">
+              <img src="img/logo.png" class="w-20 md:w-[225px]" alt="Logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Container Principal -->
+    <main class="flex-grow flex items-center justify-center min-h-screen px-4 pt-32 pb-10">
+      <!-- Caixa Branca do Formulário -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
+        <h2 class="title-font text-3xl text-yellow-600 text-center mb-6 uppercase tracking-wider">
+          Inscrição<br>Voluntária
+        </h2>
+        
+        <!-- Ao enviar, exibe o modal na mesma página primeiro -->
+        <form action="#inscricao-realizada" method="GET" class="space-y-4">
+          <!-- Nome (Obrigatório) -->
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">Nome: </label>
+            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+             focus:ring-blue-400 focus:border-transparent" required>
+          </div>
+          
+          <div>
+            <label for="nascimento" class="block text-gray-700 text-sm font-medium mb-1"> Data de Nascimento: </label>
+            <input type="date" id="nascimento" class="w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2
+             focus:ring-blue-400 focus:border-transparent cursor-pointer">
+          </div>
+
+          <!-- Endereço (Obrigatório) -->
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">Endereço:</label>
+            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 
+            focus:ring-blue-400 focus:border-transparent" required>
+          </div>
+
+           <!-- Campo de Senha -->
+                    <div>
+                        <div class="flex justify-between items-center mb-1">
+                            <label class="block text-gray-700 text-sm font-medium">Senha:</label>
+                        </div>
+                        <input type="password" placeholder="••••••••" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+                         focus:ring-blue-400 focus:border-transparent" required>
+                    </div>
+
+          <div>
+            <label for="estado" class="block text-gray-700 text-sm font-medium mb-1"> Estado: </label>
+            <select id="estado" class="w-full px-4 py-2 border border-blue-300 rounded-lg text-gray-700 bg-white focus:outline-none focus:ring-2
+             focus:ring-blue-400 focus:border-transparent cursor-pointer">
+              <option value="" disabled selected>Selecione seu estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+          </div>
+
+           <div>
+            <label for="estado" class="block text-gray-700 text-sm font-medium mb-1"> ONGs perto de você: </label>
+            <select id="estado" class="w-full px-4 py-2 border border-blue-300 rounded-lg text-gray-700 bg-white focus:outline-none focus:ring-2
+             focus:ring-blue-400 focus:border-transparent cursor-pointer">
+              <option value="" disabled selected>Selecione qual preferir</option>
+              <option value="AC">ONG Fulana</option>
+              <option value="AC">ONG Ciclana</option>
+              <option value="AC">ONG Beltrana</option>
+            </select>
+           </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">Telefone:</label>
+            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+             focus:ring-blue-400 focus:border-transparent">
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">Email:</label>
+            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+             focus:ring-blue-400 focus:border-transparent">
+          </div>
+
+          <div>
+            <label class="block text-gray-700 text-sm font-medium mb-1">Profissão:</label>
+            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+             focus:ring-blue-400 focus:border-transparent">
+          </div>
+
+          <!-- CNH OBRIGATÓRIA -->
+          <div>
+            <p class="text-gray-700 text-sm font-medium mb-1">Você tem CNH?</p>
+            <input type="radio" id="sim" name="cnh" value="sim" required>
+            <label for="sim" class="mr-4 text-gray-600">Sim</label>
+            <input type="radio" id="nao" name="cnh" value="nao">
+            <label for="nao" class="text-gray-600">Não</label>
+          </div>
+
+          <!-- Disponibilidade de Horário -->
+          <div>
+            <p class="text-gray-700 text-sm font-medium mb-1">Disponibilidade de horário:</p>
+            <input type="checkbox" id="manha" name="horarios" value="manha">
+            <label for="manha" class="mr-3 text-gray-600">Manhã</label>
+            <input type="checkbox" id="tarde" name="horaway" value="tarde">
+            <label for="tarde" class="mr-3 text-gray-600">Tarde</label>
+            <input type="checkbox" id="noite" name="horarios" value="noite">
+            <label for="noite" class="text-gray-600">Noite</label>
+          </div>
+
+          <!-- Experiência OBRIGATÓRIA -->
+          <div>
+            <label for="experiencia" class="block text-gray-700 text-sm font-medium mb-1">Descreva sua experiência profissional:</label>
+            <textarea id="experiencia" name="experiencia" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2
+             focus:ring-blue-400 focus:border-transparent" placeholder="Conte um pouco sobre suas experiências anteriores..." required></textarea>
+          </div>
+
+          <!-- Botão de Enviar -->
+          <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2.5 px-4 rounded-lg
+           transition-colors mt-4 block text-center cursor-pointer">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

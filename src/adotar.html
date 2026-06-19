@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Animal Love</title>
+    <!-- Favicon Protetor contra distorção -->
+    <link rel="icon" type="image/png" href="img/logoaa.png">
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .title-font{
+            font-family: 'Anton', sans-serif;
+        }
+        /* SOLUÇÃO DEFINITIVA PARA MATAR O ZOOM DA IMAGEM */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('img/fundo.jpg');
+            background-repeat: repeat;
+            background-size: auto; /* Trava no tamanho real da foto, sem esticar */
+        }
+
+    </style>
+</head>
+<body class="min-h-screen paw-bg flex">
+    <div class="w-full">
+        <div class="bg-[url(/img/fundo.jpg)]"></div>
+        
+<!-- HEADER ALTERADO PARA BRANCO COM BORDA E SOMBRA -->
+<header class="fixed top-0 left-0 bg-slate-100 border-b border-gray-100 w-full z-50 shadow-sm">
+  <!-- Container interno ajustado com flex-row e flex-wrap para telas pequenas -->
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-12 py-3 md:py-4 gap-2">
+    
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <a href="index.html">
+        <img src="img/logo.png" class="w-20 md:w-[225px]" alt="Logo">
+      </a>
+    </div>
+
+    <!-- Menu Corrigido: Visível no celular com texto menor e espaçamento menor -->
+    <nav class="flex">
+      <ul class="flex gap-3 sm:gap-8 font-bold list-none m-0 p-0 text-xs sm:text-base whitespace-nowrap">
+        <li>
+          <a href="alerta_cadastropet.html" class="text-black hover:text-rose-600 transition-colors duration-300 no-underline">
+            Cadastro de pet
+          </a>
+        </li>
+        <li>
+          <a href="alerta_ong.html" class="text-black hover:text-rose-600 transition-colors duration-300 no-underline">
+            Cadastro de ONG
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+        <!-- CONTAINER DO CONTEÚDO PRINCIPAL: Enquadrado e afastado das margens com segurança -->
+        <main class="max-w-6xl mx-auto px-6 md:px-12 pt-36 pb-10">
+            
+            <!-- GRID RESPONSIVO INTERNO -->
+            <div class="grid gap-8 lg:grid-cols-[1fr_300px]">
+                
+                <!-- SEÇÃO DE FOTOS DO PET -->
+                <section>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Foto principal -->
+                        <img src="img/bet1.png" alt="Beethoven" class="w-full h-[250px] md:h-[450px] object-cover rounded-2xl shadow-lg" >
+                        
+                        <!-- Fotos menores -->
+                        <div class="flex flex-col gap-4">
+                            <img src="img/bet2.png" alt="Beethoven" class="w-full h-[117px] md:h-[217px] object-cover rounded-2xl shadow-lg" >
+                            <img src="img/bet3.png" alt="Beethoven" class="w-full h-[117px] md:h-[217px] object-cover rounded-2xl shadow-lg" >
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BOTÕES LATERAIS DE AÇÃO (Puxando os estilos do seu input.css) -->
+                <!-- BOTÕES LATERAIS IGUAIS AOS DA POLLY (CORES SÓLIDAS) -->
+    <aside class="order-3 lg:order-2 flex flex-col gap-6 justify-center h-full">
+        <!-- Vermelho Escuro Sólido -->
+        <a href="alerta_queroadotar.html" class="bg-[#A50021] hover:bg-[#5c0010] text-white rounded-full py-5 text-xl lg:text-2xl font-black shadow-lg transition-all 
+        duration-300 hover:scale-110 hover:shadow-2xl tracking-wide text-center no-underline block">
+            Quero adotar
+        </a>
+        <!-- Azul Marinho Sólido -->
+        <a href="alerta1_doar.html" class="bg-[#9e3b42] hover:bg-[#e4717a] text-white rounded-full py-5 text-xl lg:text-2xl font-black shadow-lg transition-all
+         duration-300 hover:scale-110 hover:shadow-2xl tracking-wide text-center no-underline block">
+            Doação
+        </a>
+    </aside>
+
+                <!-- CAIXA BRANCA DE INFORMAÇÕES DO THOR -->
+                <section class="order-2 lg:order-3 lg:col-span-2 bg-indigo-200 rounded-3xl shadow-xl p-6 md:p-8" >
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6"> Beethoven 🐶 </h2>
+                    
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 text-lg font-medium text-gray-800">
+                        <div>
+                            <span class="font-bold text-gray-900"> Idade: </span> 3 meses
+                        </div>
+                        <div>
+                            <span class="font-bold text-gray-900"> Porte: </span> Pequeno
+                        </div>
+                        <div>
+                            <span class="font-bold text-gray-900"> Sexo: </span> Macho
+                        </div>
+                        <div>
+                            <span class="font-bold text-gray-900"> Vacinado: </span> Sim
+                        </div>
+                    </div>
+                    
+                    <div class="border-t pt-6">
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-900"> Sobre o Thor </h3>
+                        <p class="text-gray-700 leading-relaxed text-lg"> 
+                            Thor é um filhote extremamente dócil, brincalhão e cheio de energia. Ele adora comer, brincar 
+                            com crianças e receber carinho. Está vacinado e pronto para encontrar uma família amorosa. 
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mt-4 text-lg"> 
+                            Convive muito bem com outros animais, gosta de correr, brincar com bolinhas e receber atenção dos humanos. 
+                        </p>
+                    </div>
+                </section>
+                
+            </div>
+
+             <!-- BLOCO 2: POLLY (OUTROS CACHORROS) -->
+            <div class="grid gap-8 lg:grid-cols-[1fr_300px] border-t-2 border-gray-200/50 pt-16">
+                <!-- FOTOS DA POLLY (Usando suas imagens locais) -->
+                <section>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Foto principal grande -->
+                        <img src="img/polly1.jpg" alt="Polly" class="w-full h-[250px] md:h-[450px] object-cover rounded-2xl shadow-lg" >
+                        <!-- Fotos menores empilhadas -->
+                        <div class="flex flex-col gap-4">
+                            <img src="img/polly2.jpg" alt="Polly detalhe" class="w-full h-[117px] md:h-[217px] object-cover rounded-2xl shadow-lg" >
+                            <img src="img/polly3.jpg" alt="Polly brincando" class="w-full h-[117px] md:h-[217px] object-cover rounded-2xl shadow-lg" >
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BOTÕES LATERAIS DA POLLY -->
+                <aside class="order-3 lg:order-2 flex flex-col gap-6 justify-center h-full">
+                    <a href="alerta_queroadotar.html" class="bg-[#A50021] hover:bg-[#5c0010] text-white rounded-full py-5 text-xl lg:text-2xl font-black shadow-lg transition-all
+                     duration-300 hover:scale-110 hover:shadow-2xl tracking-wide text-center no-underline block">
+                        Quero adotar
+                    </a>
+                    <a href="alerta1_doar.html" class="bg-[#9e3b42] hover:bg-[#e4717a] text-white rounded-full py-5 text-xl lg:text-2xl font-black shadow-lg transition-all
+                     duration-300 hover:scale-110 hover:shadow-2xl tracking-wide text-center no-underline block">
+                        Doação
+                    </a>
+                </aside>
+
+                <!-- INFORMAÇÕES DA POLLY -->
+                <section class="order-2 lg:order-3 lg:col-span-2 bg-indigo-200 rounded-3xl shadow-xl p-6 md:p-8" >
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6"> Polly 🐶 </h2>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 text-lg font-medium text-gray-800">
+                        <div><span class="font-bold text-gray-900"> Idade: </span> 3 anos</div>
+                        <div><span class="font-bold text-gray-900"> Porte: </span> Médio</div>
+                        <div><span class="font-bold text-gray-900"> Sexo: </span> Fêmea</div>
+                        <div><span class="font-bold text-gray-900"> Vacinada: </span> Sim</div>
+                    </div>
+                    <div class="border-t pt-6">
+                        <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-900"> Sobre a Polly </h3>
+                        <p class="text-gray-700 leading-relaxed text-lg"> 
+                            Polly é uma cadela jovem, super carinhosa, companheira e que adora ficar no passear. Ela foi resgatada de
+                             uma situação de abandono nas ruas e agora está saudável, castrada e cheia de amor para dar.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mt-4 text-lg"> 
+                            É ideal para quem mora em casa grande que tenha quintal devido ao seu porte e temperamento mais agitado. Se dá muito bem com gatos e outros cães.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- BLOCO 3: PIMPONA (SÓ A GATA) -->
+<div class="grid gap-8 lg:grid-cols-[1fr_300px] border-t-2 border-gray-200/50 pt-16">
+    <!-- FOTOS DA PIMPONA -->
+    <section>
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Foto principal grande -->
+            <img src="img/pim1.jpg" onerror="this.src='img/pim1.jpeg'" alt="Pimpona" class="w-full h-[250px] md:h-[450px] object-cover rounded-2xl shadow-lg" >
+            <!-- Fotos menores empilhadas -->
+            <div class="flex flex-col gap-4">
+                <img src="img/pim2.png" onerror="this.src='img/pim2.jpeg'" alt="Pimpona detalhe" class="w-full h-[117px] md:h-[217px] object-cover rounded-2xl shadow-lg" >
+                <img src="img/pim3.png" onerror="this.src='img/pim3.jpeg'" alt="Pimpona brincando" class="w-full h-[117px] md:h-[217px] object-cover rounded-2xl shadow-lg" >
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÕES LATERAIS DA PIMPONA -->
+    <aside class="order-3 lg:order-2 flex flex-col gap-6 justify-center h-full">
+        <a href="alerta_queroadotar.html" class="bg-[#A50021] hover:bg-[#5c0010] text-white rounded-full py-5 text-xl lg:text-2xl 
+        font-black shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl tracking-wide text-center no-underline block">
+            Quero adotar
+        </a>
+        <a href="alerta1_doar.html" class="bg-[#9e3b42] hover:bg-[#e4717a] text-white rounded-full py-5 text-xl lg:text-2xl font-black shadow-lg 
+        transition-all duration-300 hover:scale-110 hover:shadow-2xl tracking-wide text-center no-underline block">
+            Doação
+        </a>
+    </aside>
+
+    <!-- INFORMAÇÕES DA PIMPONA -->
+    <section class="order-2 lg:order-3 lg:col-span-2 bg-indigo-200 rounded-3xl shadow-xl p-6 md:p-8" >
+        <h2 class="text-3xl md:text-4xl font-bold mb-6"> Pimpona 🐱 </h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 text-lg font-medium text-gray-800">
+            <div><span class="font-bold text-gray-900"> Idade: </span> 2 anos</div>
+            <div><span class="font-bold text-gray-900"> Porte: </span> Médio</div>
+            <div><span class="font-bold text-gray-900"> Sexo: </span> Fêmea</div>
+            <div><span class="font-bold text-gray-900"> Vacinada: </span> Sim</div>
+        </div>
+        <div class="border-t pt-6">
+            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-900"> Sobre a Pimpona </h3>
+            <p class="text-gray-700 leading-relaxed text-lg"> 
+                Pimpona é uma gatinha extremamente dócil, ronronenta e muito carinhosa. Adora um novelo de lã, caixas de 
+                papelão e um bom cantinho ensolarado para tirar seus cochilos. Ela foi acolhida por uma ONG parceira
+                 e está ansiosa por um lar definitivo.
+            </p>
+            <p class="text-gray-700 leading-relaxed mt-4 text-lg"> 
+                Já está perfeitamente adaptada ao uso da caixa de areia, come ração seca está castrada e convive muito bem em ambientes
+                 internos e apartamentos telados.
+            </p>
+        </div>
+    </section>
+</div>
+
+          <!-- BLOCO 4: CENOURINHA (COELHO COM FOTO) -->
+<div class="grid gap-8 lg:grid-cols-[1fr_300px] border-t-2 border-gray-200/50 pt-16">
+    <!-- FOTOS DO CENOURINHA -->
+    <section>
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Foto principal grande -->
+            <img src="img/cenourinha1.jpg" onerror="this.src='img/cenoura1.jpeg'" alt="Cenourinha" class="w-full h-[250px] md:h-[450px] object-cover rounded-2xl shadow-lg" >
+            <!-- Fotos menores empilhadas -->
+            <div class="flex flex-col gap-4">
+                <img src="img/cenourinha2.jpg" onerror="this.src='img/cenoura2.jpeg'" alt="Cenourinha de lado" class="w-full h-[117px] md:h-[217px] object-cover rounded-2xl shadow-lg" >
+                <img src="img/cenourinha3.jpg" onerror="this.src='img/cenoura3.jpeg'" alt="Cenourinha comendo" class="w-full h-[117px] md:h-[217px] object-cover rounded-2xl shadow-lg" >
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÕES LATERAIS DO CENOURINHA -->
+    <aside class="order-3 lg:order-2 flex flex-col gap-6 justify-center h-full">
+        <a href="alerta_queroadotar.html" class="bg-[#A50021] hover:bg-[#5c0010] text-white rounded-full py-5
+         text-xl lg:text-2xl font-black shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl tracking-wide text-center no-underline block">
+            Quero adotar
+        </a>
+        <a href="alerta1_doar.html" class="bg-[#9e3b42] hover:bg-[#e4717a] text-white rounded-full py-5 text-xl lg:text-2xl 
+        font-black shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl tracking-wide text-center no-underline block">
+            Doação
+        </a>
+    </aside>
+
+    <!-- INFORMAÇÕES DO CENOURINHA -->
+    <section class="order-2 lg:order-3 lg:col-span-2 bg-indigo-200 rounded-3xl shadow-xl p-6 md:p-8" >
+        <h2 class="text-3xl md:text-4xl font-bold mb-6"> Cenourinha 🐰 </h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 text-lg font-medium text-gray-800">
+            <div><span class="font-bold text-gray-900"> Idade: </span> 8 meses</div>
+            <div><span class="font-bold text-gray-900"> Porte: </span> Pequeno</div>
+            <div><span class="font-bold text-gray-900"> Sexo: </span> Macho</div>
+            <div><span class="font-bold text-gray-900"> Vacinado: </span> Sim</div>
+        </div>
+        <div class="border-t pt-6">
+            <h3 class="text-xl md:text-2xl font-bold mb-4 text-gray-900"> Sobre o Cenourinha </h3>
+            <p class="text-gray-700 leading-relaxed text-lg"> 
+                Cenourinha é um coelhinho de pelagem preta brilhante, da raça Mini Lionhead. Ele é dócil, extremamente curioso 
+                e adora explorar o ambiente dando pequenos saltos de alegria. Foi acolhido após ser deixado em um parque público e hoje está super saudável.
+            </p>
+            <p class="text-gray-700 leading-relaxed mt-4 text-lg"> 
+                Adora comer feno fresco, folhas escuras e ganhar carinho na cabecinha. É um pet muito silencioso, 
+                ideal para quem busca uma companhia tranquila para ambientes internos.
+            </p>
+        </div>
+    </section>
+</div>
+
+
+        </main>
+    </div>
+</body>
+</html>
