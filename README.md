@@ -1,0 +1,33 @@
+In Portugues:
+
+# Olá, eu sou Winnie Voltaire 👋
+
+💻 Estudante de Ciência da Computação em andamento 2026/1.
+
+🌱 Atualmente estudando Python, C++ e HTML.
+
+🎯 Interesse em Desenvolvimento de Software, Algoritmos e Resolução de Problemas.
+
+📫 Contato: voltairewinnie@email.com.
+
+## Tecnologias
+- Python
+- C++
+- Html
+_____________________________________________________________________________________________
+In English:
+
+# Hi, I'm Winnie Voltaire 👋
+
+💻 Computer Science Student 2026/1.
+
+🌱 Currently learning Python, C++ and HTML.
+
+🎯 Interested in Software Development, Algorithms, and Problem Solving.
+
+📫 Contact:voltairewinnie@email.com.
+
+## Technologies
+- Python
+- C++
+- Html
