@@ -4,7 +4,7 @@ In Portugues:
 
 💻 Estudante de Ciência da Computação em andamento 2026/1.
 
-🌱 Atualmente estudando Python, C++ e HTML.
+🌱 Atualmente estudando Python, C++, HTML e CSS.
 
 🎯 Interesse em Desenvolvimento de Software, Algoritmos e Resolução de Problemas.
 
@@ -14,6 +14,7 @@ In Portugues:
 - Python
 - C++
 - Html
+- CSS
 _____________________________________________________________________________________________
 In English:
 
@@ -21,7 +22,7 @@ In English:
 
 💻 Computer Science Student 2026/1.
 
-🌱 Currently learning Python, C++ and HTML.
+🌱 Currently learning Python, C++, HTML and CSS.
 
 🎯 Interested in Software Development, Algorithms, and Problem Solving.
 
@@ -31,3 +32,4 @@ In English:
 - Python
 - C++
 - Html
+- CSS
