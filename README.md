@@ -1,44 +1,87 @@
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 In Portugues:
+🐾 ANIMALLOVE
+O que é o ANIMALLOVE?
 
-# Olá, eu sou Winnie Voltaire 👋
+O ANIMALLOVE é um projeto desenvolvido por uma equipe de três integrantes com o objetivo de promover o cuidado, a proteção e o bem-estar dos animais, conectando a comunidade a organizações e iniciativas voltadas para a causa animal.
 
-💻 Estudante de Ciência da Computação em andamento 2026/1.
+Objetivo do Projeto:
 
-🌱 Atualmente estudando Python, C++, HTML e CSS.
+Desenvolver uma plataforma que facilite a adoção de animais, incentive as doações, permita denúncias de maus-tratos e promova o voluntariado, contribuindo para uma sociedade mais consciente e comprometida com a proteção animal.
 
-🎯 Interesse em Desenvolvimento de Software, Algoritmos e Resolução de Problemas.
+Funcionalidades:
+Cadastro de pets;
+Cadastro de comunidades e organizações;
+Adoção de animais;
+Doações via cartão, PIX e boleto bancário;
+Denúncias de maus-tratos;
+Cadastro de voluntários;
+Divulgação da missão e dos projetos da iniciativa.
 
-📫 Contato: voltairewinnie@email.com.
+Tecnologias Utilizadas:
+-HTML;
+-CSS;
+-JavaScript;
 
-## Tecnologias
-- Python
-- C++
-- Html
-- CSS
-_____________________________________________________________________________________________
+Integrantes da Equipe
+- Aila Bentes;
+- Victoria Borges;
+- Winnie Voltaire;
+
+Como Executar o Projeto
+Clone este repositório:
+
+- git clone https://github.com/seu-usuario/ANIMALLOVE-web.git
+
+Acesse a pasta do projeto:
+
+cd ANIMALLOVE-web
+Abra o arquivo index.html em seu navegador ou utilize a extensão Live Server no Visual Studio Code.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 In English:
+🐾 ANIMALLOVE
+What is ANIMALLOVE?
 
-# Hi, I'm Winnie Voltaire 👋
+ANIMALLOVE is a project developed by a team of three members with the goal of promoting animal care, protection, and well-being by connecting communities and organizations dedicated to animal welfare.
 
-💻 Computer Science Student 2026/1.
+Project Objective:
 
-🌱 Currently learning Python, C++, HTML and CSS.
+To develop a platform that facilitates animal adoption, encourages donations, enables animal abuse reporting, and promotes volunteer opportunities, contributing to a more conscious and committed society regarding animal protection.
 
-🎯 Interested in Software Development, Algorithms, and Problem Solving.
+Features:
+Pet registration;
+Community and organization registration;
+Animal adoption;
+Donations via credit card, PIX, and bank slip;
+Animal abuse reporting;
+Volunteer registration;
+Promotion of the project's mission and initiatives.
 
-📫 Contact:voltairewinnie@email.com.
+Technologies Used:
+- HTML;
+- CSS;
+- JavaScript;
 
-## Technologies
-- Python
-- C++
-- Html
-- CSS
+Team Members
+- Aila Bentes
+- Victoria Borges
+- Winnie Voltaire
+  
+How to Run the Project
 
-______________________________________________________________________________________________
-## Website Explanation in portugues:
-O ANIMALLOVE é um projeto desenvolvido por uma equipe de três integrantes com o objetivo de promover o cuidado, a proteção e o bem-estar dos animais. O site apresenta a missão do projeto e oferece funcionalidades como cadastro de pets e comunidades, adoção de animais, doações por cartão, PIX e boleto bancário, denúncias de maus-tratos e oportunidades de voluntariado. A iniciativa busca conectar organizações e a comunidade para contribuir com uma sociedade mais consciente e comprometida com a causa animal.
+Clone this repository:
 
-## Website Explanation in english:
-ANIMALLOVE is a project developed by a team of three members with the goal of promoting animal care, protection, and well-being. The website presents the project's mission and offers features such as pet and community registration, animal adoption, donations via credit card, PIX, and bank slip, animal abuse reporting, and volunteer opportunities. The initiative aims to connect organizations and communities to build a more conscious and committed society for animal welfare.
+- git clone https://github.com/your-username/ANIMALLOVE-web.git
 
+Access the project folder:
+
+cd ANIMALLOVE-web
+Open the index.html file in your browser or use the Live Server extension in Visual Studio Code.
+License
+
+This project was developed for academic purposes.
 
