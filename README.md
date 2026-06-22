@@ -14,20 +14,20 @@ Objetivo do Projeto:
 Desenvolver uma plataforma que facilite a adoção de animais, incentive as doações, permita denúncias de maus-tratos e promova o voluntariado, contribuindo para uma sociedade mais consciente e comprometida com a proteção animal.
 
 Funcionalidades:
-Cadastro de pets;
-Cadastro de comunidades e organizações;
-Adoção de animais;
-Doações via cartão, PIX e boleto bancário;
-Denúncias de maus-tratos;
-Cadastro de voluntários;
-Divulgação da missão e dos projetos da iniciativa.
+- Cadastro de pets;
+- Cadastro de comunidades e organizações;
+- Adoção de animais;
+- Doações via cartão, PIX e boleto bancário;
+- Denúncias de maus-tratos;
+- Cadastro de voluntários;
+- Divulgação da missão e dos projetos da iniciativa.
 
 Tecnologias Utilizadas:
--HTML;
--CSS;
+- HTML;
+- CSS;
 -JavaScript;
 
-Integrantes da Equipe
+Integrantes da Equipe:
 - Aila Bentes;
 - Victoria Borges;
 - Winnie Voltaire;
@@ -57,20 +57,20 @@ Project Objective:
 To develop a platform that facilitates animal adoption, encourages donations, enables animal abuse reporting, and promotes volunteer opportunities, contributing to a more conscious and committed society regarding animal protection.
 
 Features:
-Pet registration;
-Community and organization registration;
-Animal adoption;
-Donations via credit card, PIX, and bank slip;
-Animal abuse reporting;
-Volunteer registration;
-Promotion of the project's mission and initiatives.
+- Pet registration;
+- Community and organization registration;
+- Animal adoption;
+- Donations via credit card, PIX, and bank slip;
+- Animal abuse reporting;
+- Volunteer registration;
+- Promotion of the project's mission and initiatives.
 
 Technologies Used:
 - HTML;
 - CSS;
 - JavaScript;
 
-Team Members
+Team Members:
 - Aila Bentes
 - Victoria Borges
 - Winnie Voltaire
