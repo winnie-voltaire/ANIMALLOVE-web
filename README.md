@@ -36,10 +36,13 @@ Como Executar o Projeto
 Clone este repositório:
 
 - git clone https://github.com/winnie-voltaire/ANIMALLOVE-web.git
+  
 Acesse a pasta do projeto:
 
 cd ANIMALLOVE-web
 Abra o arquivo index.html em seu navegador ou utilize a extensão Live Server no Visual Studio Code.
+
+Esse projeto foi desenvolvido para fins acadêmicos.
 
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
