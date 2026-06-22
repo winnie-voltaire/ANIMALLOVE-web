@@ -35,8 +35,7 @@ Integrantes da Equipe:
 Como Executar o Projeto
 Clone este repositório:
 
-- git clone https://github.com/seu-usuario/ANIMALLOVE-web.git
-
+- git clone 
 Acesse a pasta do projeto:
 
 cd ANIMALLOVE-web
@@ -79,7 +78,7 @@ How to Run the Project
 
 Clone this repository:
 
-- git clone https://github.com/your-username/ANIMALLOVE-web.git
+- git clone 
 
 Access the project folder:
 
