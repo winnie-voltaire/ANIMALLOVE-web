@@ -23,8 +23,8 @@ Funcionalidades:
 - Divulgação da missão e dos projetos da iniciativa.
 
 Tecnologias Utilizadas:
-- HTML;
-- CSS;
+-HTML;
+-CSS;
 -JavaScript;
 
 Integrantes da Equipe:
