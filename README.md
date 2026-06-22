@@ -2,7 +2,9 @@
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 In Portugues:
+
 🐾 ANIMALLOVE
+
 O que é o ANIMALLOVE?
 
 O ANIMALLOVE é um projeto desenvolvido por uma equipe de três integrantes com o objetivo de promover o cuidado, a proteção e o bem-estar dos animais, conectando a comunidade a organizações e iniciativas voltadas para a causa animal.
@@ -43,7 +45,9 @@ Abra o arquivo index.html em seu navegador ou utilize a extensão Live Server no
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 In English:
+
 🐾 ANIMALLOVE
+
 What is ANIMALLOVE?
 
 ANIMALLOVE is a project developed by a team of three members with the goal of promoting animal care, protection, and well-being by connecting communities and organizations dedicated to animal welfare.
