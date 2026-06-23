@@ -5,6 +5,7 @@ O ANIMALLOVE é um projeto desenvolvido por uma equipe de três integrantes com 
 ## Website Explanation in english:
 ANIMALLOVE is a project developed by a team of three members with the goal of promoting animal care, protection, and well-being. The website presents the project's mission and offers features such as pet and community registration, animal adoption, donations via credit card, PIX, and bank slip, animal abuse reporting, and volunteer opportunities. The initiative aims to connect organizations and communities to build a more conscious and committed society for animal welfare.
 
+
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 In Portugues:
